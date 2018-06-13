@@ -1,7 +1,7 @@
 ---
 # main file for remote DB task
 - name: postgres installation
-  include_tasks: install_postgres.yml
+  include_tasks: install-postgres.yml
 
 - name: engine and dwh database installation
-  include_tasks: install_engine_db.yml
+  include_tasks: install-engine-db.yml
