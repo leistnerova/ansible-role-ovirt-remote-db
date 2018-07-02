@@ -161,7 +161,7 @@
   file:
     path: "{{ pgpath.stdout }}/ansible-dump"
     state: directory
-  when: virt_engine_remote_db_dump is defined or ovirt_engine_remote_db_dump is defined
+  when: ovirt_engine_remote_db_dump is defined or ovirt_engine_remote_db_dwh_dump is defined
 
 - name: get engine dump
   copy:
